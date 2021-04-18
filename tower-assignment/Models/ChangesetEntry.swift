@@ -11,7 +11,7 @@ public enum ChangesetStatus: String, Codable {
     case deleted = "Deleted"
 }
 
-public struct ChangesetEntry: Codable {
+public struct ChangesetEntry: Codable, Equatable {
     public var status: ChangesetStatus
     public var filename: String
 }
