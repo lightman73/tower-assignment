@@ -13,6 +13,7 @@
 		1353F93D262C4DE200F71C55 /* Date+Formatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1353F93C262C4DE200F71C55 /* Date+Formatted.swift */; };
 		1353F94A262C520E00F71C55 /* CommitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1353F949262C520E00F71C55 /* CommitCell.swift */; };
 		1353F94F262C52E300F71C55 /* CommitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1353F94E262C52E300F71C55 /* CommitCell.xib */; };
+		1353F955262C73B500F71C55 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1353F954262C73B500F71C55 /* DetailVC.swift */; };
 		1353F961262C78B700F71C55 /* ChangesetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1353F960262C78B700F71C55 /* ChangesetCell.swift */; };
 		1353F966262C78C700F71C55 /* ChangesetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1353F965262C78C700F71C55 /* ChangesetCell.xib */; };
 		1353F96B262C7A4A00F71C55 /* ChangesetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1353F96A262C7A4A00F71C55 /* ChangesetEntry.swift */; };
@@ -56,6 +57,7 @@
 		1353F93C262C4DE200F71C55 /* Date+Formatted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatted.swift"; sourceTree = "<group>"; };
 		1353F949262C520E00F71C55 /* CommitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitCell.swift; sourceTree = "<group>"; };
 		1353F94E262C52E300F71C55 /* CommitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommitCell.xib; sourceTree = "<group>"; };
+		1353F954262C73B500F71C55 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		1353F960262C78B700F71C55 /* ChangesetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangesetCell.swift; sourceTree = "<group>"; };
 		1353F965262C78C700F71C55 /* ChangesetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangesetCell.xib; sourceTree = "<group>"; };
 		1353F96A262C7A4A00F71C55 /* ChangesetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangesetEntry.swift; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 		13858DBD262C293700F2FA9A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				1353F954262C73B500F71C55 /* DetailVC.swift */,
 				13858DC1262C2A2100F2FA9A /* MainVC.swift */,
 			);
 			path = ViewControllers;
@@ -394,6 +397,7 @@
 				13858D89262C239C00F2FA9A /* AppDelegate.swift in Sources */,
 				1353F961262C78B700F71C55 /* ChangesetCell.swift in Sources */,
 				13F28A2C262CC6A700C55613 /* UIViewController+Alert.swift in Sources */,
+				1353F955262C73B500F71C55 /* DetailVC.swift in Sources */,
 				1353F96B262C7A4A00F71C55 /* ChangesetEntry.swift in Sources */,
 				13858DC2262C2A2100F2FA9A /* MainVC.swift in Sources */,
 				13F28A24262CBC4900C55613 /* String+Date.swift in Sources */,
