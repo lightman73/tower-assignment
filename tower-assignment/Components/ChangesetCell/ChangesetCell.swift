@@ -26,6 +26,7 @@ class ChangesetCell: UITableViewCell {
     @IBOutlet weak var filenameLabel: UILabel!
     @IBOutlet weak var expandImageView: UIImageView!
     @IBOutlet weak var diffLabel: UILabel!
+    @IBOutlet weak var diffContainer: UIStackView!
     
 
     // MARK: - Properties
@@ -37,7 +38,11 @@ class ChangesetCell: UITableViewCell {
     
     var diffText: String? {
         didSet {
-            diffLabel.text = diffText
+            if diffText != nil {
+                diffLabel.text = diffText
+            } else {
+                diffLabel.text = "Diff not yet loaded"
+            }
         }
     }
     
@@ -58,8 +63,9 @@ class ChangesetCell: UITableViewCell {
       
         statusLabel.text = nil
         filenameLabel.text = nil
-        diffLabel.text = nil
         expandImageView.image = nil
+        diffLabel.text = nil
+        diffContainer.isHidden = true
         diffViewStatus = .reduced
     }
     
@@ -70,29 +76,33 @@ class ChangesetCell: UITableViewCell {
             return
         }
         
-        expandImageView.image = UIImage(systemName: "arrowtriangle.right.fill")
-        
         statusLabel.text = changeset.status.rawValue
         filenameLabel.text = changeset.filename
+        expandImageView.image = UIImage(systemName: "arrowtriangle.right.fill")
+        diffContainer.isHidden = true
+        diffViewStatus = .reduced
     }
     
-    
-    // MARK: - IBActions
-    
-    @IBAction func didTapExpandView(_ sender: Any) {
+    private func showOrHideDiff() {
         switch diffViewStatus {
         case .reduced:
-            expandImageView.image = UIImage(systemName: "arrowtriangle.down.fill")
-            UIView.animate(withDuration: Constants.expandAnimationDuration) {
-                self.diffLabel.isHidden = false
-            }
-            diffViewStatus = .expanded
+            showDiff()
         case .expanded:
-            expandImageView.image = UIImage(systemName: "arrowtriangle.right.fill")
-            UIView.animate(withDuration: Constants.hideAnimationDuration) {
-                self.diffLabel.isHidden = true
-            }
-            diffViewStatus = .reduced
+            hideDiff()
         }
+    }
+    
+    public func showDiff() {
+        expandImageView.image = UIImage(systemName: "arrowtriangle.down.fill")
+        diffContainer.isHidden = false
+        diffViewStatus = .expanded
+        layoutIfNeeded()
+    }
+    
+    public func hideDiff() {
+        expandImageView.image = UIImage(systemName: "arrowtriangle.right.fill")
+        diffContainer.isHidden = true
+        diffViewStatus = .reduced
+        layoutIfNeeded()
     }
 }

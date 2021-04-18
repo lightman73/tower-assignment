@@ -12,7 +12,7 @@ class CommitCell: UITableViewCell {
     // MARK: - Outlets
     @IBOutlet weak var containerStackView: UIStackView!
     @IBOutlet weak var avatarImageView: UIImageView!
-    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var authorNameLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var hashLabel: UILabel!
     @IBOutlet weak var subjectLabel: UILabel!
@@ -39,7 +39,7 @@ class CommitCell: UITableViewCell {
         super.prepareForReuse()
       
         avatarImageView.image = UIImage(systemName: "person.fill")
-        authorLabel.text = nil
+        authorNameLabel.text = nil
         dateLabel.text = nil
         hashLabel.text = nil
         subjectLabel.text = nil
@@ -52,7 +52,7 @@ class CommitCell: UITableViewCell {
             return
         }
         
-        authorLabel.text = commit.authorName
+        authorNameLabel.text = commit.authorName
         dateLabel.text = commit.date.formattedShortDate
         hashLabel.text = commit.hash
         subjectLabel.text = commit.subject
