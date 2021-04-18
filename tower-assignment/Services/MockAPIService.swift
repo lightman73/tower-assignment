@@ -10,9 +10,9 @@ import Foundation
 class MockAPIService: APIService {
     func getCommitsList(handler: @escaping (Result<[Commit], APIServiceError>) -> Void) {
         let dummyCommits = [
-            Commit(hash: "ec0f93a", authorName: "Jon Snow", authorEmail: "jon.snow@stark.com", subject: "Just a test commit", date: "2021-04-18'T'18:27:32Z".iso8601StringToDate ?? Date()),
-            Commit(hash: "fd1e87c", authorName: "Tyrion Lannister", authorEmail: "tyrion@lannister.com", subject: "A much better test commit", date: "2021-04-18'T'19:12:41Z".iso8601StringToDate ?? Date()),
-            Commit(hash: "adf2f2b4", authorName: "Daenerys Targaryen", authorEmail: "daenerys@targaryen.com", subject: "Added a couple of dragons", date: "2021-04-18'T'20:38:00Z".iso8601StringToDate ?? Date()),
+            Commit(hash: "ec0f93a", authorName: "Jon Snow", authorEmail: "jon.snow@stark.com", subject: "Just a test commit", date: "2021-04-18T18:27:32Z".iso8601StringToDate ?? Date()),
+            Commit(hash: "fd1e87c", authorName: "Tyrion Lannister", authorEmail: "tyrion@lannister.com", subject: "A much better test commit", date: "2021-04-18T19:12:41Z".iso8601StringToDate ?? Date()),
+            Commit(hash: "adf2f2b4", authorName: "Daenerys Targaryen", authorEmail: "daenerys@targaryen.com", subject: "Added a couple of dragons", date: "2021-04-18T20:38:00Z".iso8601StringToDate ?? Date()),
         ]
         
         let randomWait = Double.random(in: 0.3...1.0)
