@@ -17,6 +17,6 @@ public enum APIServiceError: LocalizedError {
 
 public protocol APIService: class {
     func getCommitsList(handler: @escaping (Result<[Commit], APIServiceError>) -> Void)
-    func getChangesetFrom(commit: String, handler: @escaping (Result<[ChangesetEntry], APIServiceError>) -> Void)
-    func getDiffFor(changeset: String, handler: @escaping (Result<String?, APIServiceError>) -> Void)
+    func getChangesetFrom(commitHash: String, handler: @escaping (Result<[ChangesetEntry], APIServiceError>) -> Void)
+    func getDiffFor(commitHash: String, filename: String, handler: @escaping (Result<String?, APIServiceError>) -> Void)
 }
