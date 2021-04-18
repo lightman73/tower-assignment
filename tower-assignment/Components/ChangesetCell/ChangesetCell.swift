@@ -52,6 +52,18 @@ class ChangesetCell: UITableViewCell {
     }
     
     
+    // MARK: - Overrided functions
+    override func prepareForReuse() {
+        super.prepareForReuse()
+      
+        statusLabel.text = nil
+        filenameLabel.text = nil
+        diffLabel.text = nil
+        expandImageView.image = nil
+        diffViewStatus = .reduced
+    }
+    
+    
     // MARK: - UI functions
     private func setupView() {
         guard let changeset = changeset else {

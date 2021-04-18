@@ -34,6 +34,18 @@ class CommitCell: UITableViewCell {
     }
     
     
+    // MARK: - Overrided functions
+    override func prepareForReuse() {
+        super.prepareForReuse()
+      
+        avatarImageView.image = UIImage(systemName: "person.fill")
+        authorLabel.text = nil
+        dateLabel.text = nil
+        hashLabel.text = nil
+        subjectLabel.text = nil
+    }
+    
+    
     // MARK: - UI functions
     private func setupView() {
         guard let commit = commit else {
@@ -47,6 +59,8 @@ class CommitCell: UITableViewCell {
         
         if let avatar = commit.avatar {
             avatarImageView.image = avatar
+        } else {
+            avatarImageView.image = UIImage(systemName: "person.fill")
         }
     }
 }
