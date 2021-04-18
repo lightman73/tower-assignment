@@ -7,7 +7,7 @@
 
 import UIKit
 
-public struct Commit: Codable {
+public struct Commit: Codable, Equatable {
     public var hash: String
     public var authorName: String
     public var authorEmail: String
