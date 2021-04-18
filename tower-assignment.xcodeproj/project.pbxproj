@@ -18,6 +18,7 @@
 		13858DA0262C239E00F2FA9A /* tower_assignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13858D9F262C239E00F2FA9A /* tower_assignmentTests.swift */; };
 		13858DAB262C239E00F2FA9A /* tower_assignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13858DAA262C239E00F2FA9A /* tower_assignmentUITests.swift */; };
 		13858DC2262C2A2100F2FA9A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13858DC1262C2A2100F2FA9A /* MainVC.swift */; };
+		13F28A10262C8B8A00C55613 /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F28A0F262C8B8A00C55613 /* APIServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		13858DAA262C239E00F2FA9A /* tower_assignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tower_assignmentUITests.swift; sourceTree = "<group>"; };
 		13858DAC262C239E00F2FA9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13858DC1262C2A2100F2FA9A /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		13F28A0F262C8B8A00C55613 /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		1359B6C0262C32B6001229DF /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				13F28A0F262C8B8A00C55613 /* APIServiceProtocol.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1353F92A262C456A00F71C55 /* OSLogExtensions.swift in Sources */,
+				13F28A10262C8B8A00C55613 /* APIServiceProtocol.swift in Sources */,
 				13858D89262C239C00F2FA9A /* AppDelegate.swift in Sources */,
 				13858DC2262C2A2100F2FA9A /* MainVC.swift in Sources */,
 				13858D8B262C239C00F2FA9A /* SceneDelegate.swift in Sources */,
