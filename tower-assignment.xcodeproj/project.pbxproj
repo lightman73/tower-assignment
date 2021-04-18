@@ -27,6 +27,7 @@
 		13858DAB262C239E00F2FA9A /* tower_assignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13858DAA262C239E00F2FA9A /* tower_assignmentUITests.swift */; };
 		13858DC2262C2A2100F2FA9A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13858DC1262C2A2100F2FA9A /* MainVC.swift */; };
 		13F28A10262C8B8A00C55613 /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F28A0F262C8B8A00C55613 /* APIServiceProtocol.swift */; };
+		13F28A1F262CB71300C55613 /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F28A1E262CB71300C55613 /* MockAPIService.swift */; };
 		13F28A24262CBC4900C55613 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F28A23262CBC4900C55613 /* String+Date.swift */; };
 		13F28A2C262CC6A700C55613 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F28A2B262CC6A700C55613 /* UIViewController+Alert.swift */; };
 /* End PBXBuildFile section */
@@ -75,6 +76,7 @@
 		13858DAC262C239E00F2FA9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13858DC1262C2A2100F2FA9A /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		13F28A0F262C8B8A00C55613 /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
+		13F28A1E262CB71300C55613 /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
 		13F28A23262CBC4900C55613 /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
 		13F28A2B262CC6A700C55613 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				13F28A0F262C8B8A00C55613 /* APIServiceProtocol.swift */,
+				13F28A1E262CB71300C55613 /* MockAPIService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
