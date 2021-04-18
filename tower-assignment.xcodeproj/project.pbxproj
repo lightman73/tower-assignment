@@ -11,6 +11,8 @@
 		1353F930262C4AB600F71C55 /* NibFileLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1353F92F262C4AB600F71C55 /* NibFileLoadable.swift */; };
 		1353F938262C4D0B00F71C55 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1353F937262C4D0B00F71C55 /* Commit.swift */; };
 		1353F93D262C4DE200F71C55 /* Date+Formatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1353F93C262C4DE200F71C55 /* Date+Formatted.swift */; };
+		1353F94A262C520E00F71C55 /* CommitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1353F949262C520E00F71C55 /* CommitCell.swift */; };
+		1353F94F262C52E300F71C55 /* CommitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1353F94E262C52E300F71C55 /* CommitCell.xib */; };
 		1353F96B262C7A4A00F71C55 /* ChangesetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1353F96A262C7A4A00F71C55 /* ChangesetEntry.swift */; };
 		1359B6CC262C392F001229DF /* CommitDetailHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1359B6CB262C392F001229DF /* CommitDetailHeader.swift */; };
 		1359B6D9262C417B001229DF /* CommitDetailHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1359B6D8262C417B001229DF /* CommitDetailHeader.xib */; };
@@ -47,6 +49,8 @@
 		1353F92F262C4AB600F71C55 /* NibFileLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibFileLoadable.swift; sourceTree = "<group>"; };
 		1353F937262C4D0B00F71C55 /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
 		1353F93C262C4DE200F71C55 /* Date+Formatted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatted.swift"; sourceTree = "<group>"; };
+		1353F949262C520E00F71C55 /* CommitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitCell.swift; sourceTree = "<group>"; };
+		1353F94E262C52E300F71C55 /* CommitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommitCell.xib; sourceTree = "<group>"; };
 		1353F96A262C7A4A00F71C55 /* ChangesetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangesetEntry.swift; sourceTree = "<group>"; };
 		1359B6CB262C392F001229DF /* CommitDetailHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitDetailHeader.swift; sourceTree = "<group>"; };
 		1359B6D8262C417B001229DF /* CommitDetailHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommitDetailHeader.xib; sourceTree = "<group>"; };
@@ -125,6 +129,15 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		1359B6C9262C38FD001229DF /* CommitCell */ = {
+			isa = PBXGroup;
+			children = (
+				1353F949262C520E00F71C55 /* CommitCell.swift */,
+				1353F94E262C52E300F71C55 /* CommitCell.xib */,
+			);
+			path = CommitCell;
+			sourceTree = "<group>";
+		};
 		1359B6CA262C3909001229DF /* CommitDetailHeader */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				1359B6CA262C3909001229DF /* CommitDetailHeader */,
+				1359B6C9262C38FD001229DF /* CommitCell */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -320,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13858D95262C239D00F2FA9A /* LaunchScreen.storyboard in Resources */,
+				1353F94F262C52E300F71C55 /* CommitCell.xib in Resources */,
 				13858D92262C239D00F2FA9A /* Assets.xcassets in Resources */,
 				1359B6D9262C417B001229DF /* CommitDetailHeader.xib in Resources */,
 				13858D90262C239C00F2FA9A /* Main.storyboard in Resources */,
@@ -349,6 +364,7 @@
 			files = (
 				1353F92A262C456A00F71C55 /* OSLogExtensions.swift in Sources */,
 				1359B6CC262C392F001229DF /* CommitDetailHeader.swift in Sources */,
+				1353F94A262C520E00F71C55 /* CommitCell.swift in Sources */,
 				13F28A10262C8B8A00C55613 /* APIServiceProtocol.swift in Sources */,
 				1353F938262C4D0B00F71C55 /* Commit.swift in Sources */,
 				13858D89262C239C00F2FA9A /* AppDelegate.swift in Sources */,
