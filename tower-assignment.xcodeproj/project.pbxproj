@@ -13,6 +13,8 @@
 		1353F93D262C4DE200F71C55 /* Date+Formatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1353F93C262C4DE200F71C55 /* Date+Formatted.swift */; };
 		1353F94A262C520E00F71C55 /* CommitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1353F949262C520E00F71C55 /* CommitCell.swift */; };
 		1353F94F262C52E300F71C55 /* CommitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1353F94E262C52E300F71C55 /* CommitCell.xib */; };
+		1353F961262C78B700F71C55 /* ChangesetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1353F960262C78B700F71C55 /* ChangesetCell.swift */; };
+		1353F966262C78C700F71C55 /* ChangesetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1353F965262C78C700F71C55 /* ChangesetCell.xib */; };
 		1353F96B262C7A4A00F71C55 /* ChangesetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1353F96A262C7A4A00F71C55 /* ChangesetEntry.swift */; };
 		1359B6CC262C392F001229DF /* CommitDetailHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1359B6CB262C392F001229DF /* CommitDetailHeader.swift */; };
 		1359B6D9262C417B001229DF /* CommitDetailHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1359B6D8262C417B001229DF /* CommitDetailHeader.xib */; };
@@ -51,6 +53,8 @@
 		1353F93C262C4DE200F71C55 /* Date+Formatted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatted.swift"; sourceTree = "<group>"; };
 		1353F949262C520E00F71C55 /* CommitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitCell.swift; sourceTree = "<group>"; };
 		1353F94E262C52E300F71C55 /* CommitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommitCell.xib; sourceTree = "<group>"; };
+		1353F960262C78B700F71C55 /* ChangesetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangesetCell.swift; sourceTree = "<group>"; };
+		1353F965262C78C700F71C55 /* ChangesetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangesetCell.xib; sourceTree = "<group>"; };
 		1353F96A262C7A4A00F71C55 /* ChangesetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangesetEntry.swift; sourceTree = "<group>"; };
 		1359B6CB262C392F001229DF /* CommitDetailHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitDetailHeader.swift; sourceTree = "<group>"; };
 		1359B6D8262C417B001229DF /* CommitDetailHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommitDetailHeader.xib; sourceTree = "<group>"; };
@@ -102,6 +106,15 @@
 				1353F92F262C4AB600F71C55 /* NibFileLoadable.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1353F95F262C788A00F71C55 /* ChangesetCell */ = {
+			isa = PBXGroup;
+			children = (
+				1353F960262C78B700F71C55 /* ChangesetCell.swift */,
+				1353F965262C78C700F71C55 /* ChangesetCell.xib */,
+			);
+			path = ChangesetCell;
 			sourceTree = "<group>";
 		};
 		1359B6C0262C32B6001229DF /* Services */ = {
@@ -207,6 +220,7 @@
 		13858DBB262C291000F2FA9A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1353F95F262C788A00F71C55 /* ChangesetCell */,
 				1359B6CA262C3909001229DF /* CommitDetailHeader */,
 				1359B6C9262C38FD001229DF /* CommitCell */,
 			);
@@ -337,6 +351,7 @@
 				1353F94F262C52E300F71C55 /* CommitCell.xib in Resources */,
 				13858D92262C239D00F2FA9A /* Assets.xcassets in Resources */,
 				1359B6D9262C417B001229DF /* CommitDetailHeader.xib in Resources */,
+				1353F966262C78C700F71C55 /* ChangesetCell.xib in Resources */,
 				13858D90262C239C00F2FA9A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,6 +383,7 @@
 				13F28A10262C8B8A00C55613 /* APIServiceProtocol.swift in Sources */,
 				1353F938262C4D0B00F71C55 /* Commit.swift in Sources */,
 				13858D89262C239C00F2FA9A /* AppDelegate.swift in Sources */,
+				1353F961262C78B700F71C55 /* ChangesetCell.swift in Sources */,
 				1353F96B262C7A4A00F71C55 /* ChangesetEntry.swift in Sources */,
 				13858DC2262C2A2100F2FA9A /* MainVC.swift in Sources */,
 				13858D8B262C239C00F2FA9A /* SceneDelegate.swift in Sources */,
