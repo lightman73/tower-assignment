@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		1353F92A262C456A00F71C55 /* OSLogExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1353F929262C456A00F71C55 /* OSLogExtensions.swift */; };
 		1353F930262C4AB600F71C55 /* NibFileLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1353F92F262C4AB600F71C55 /* NibFileLoadable.swift */; };
+		1353F938262C4D0B00F71C55 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1353F937262C4D0B00F71C55 /* Commit.swift */; };
 		1353F93D262C4DE200F71C55 /* Date+Formatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1353F93C262C4DE200F71C55 /* Date+Formatted.swift */; };
+		1353F96B262C7A4A00F71C55 /* ChangesetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1353F96A262C7A4A00F71C55 /* ChangesetEntry.swift */; };
 		13858D89262C239C00F2FA9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13858D88262C239C00F2FA9A /* AppDelegate.swift */; };
 		13858D8B262C239C00F2FA9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13858D8A262C239C00F2FA9A /* SceneDelegate.swift */; };
 		13858D90262C239C00F2FA9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13858D8E262C239C00F2FA9A /* Main.storyboard */; };
@@ -41,7 +43,9 @@
 /* Begin PBXFileReference section */
 		1353F929262C456A00F71C55 /* OSLogExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSLogExtensions.swift; sourceTree = "<group>"; };
 		1353F92F262C4AB600F71C55 /* NibFileLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibFileLoadable.swift; sourceTree = "<group>"; };
+		1353F937262C4D0B00F71C55 /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
 		1353F93C262C4DE200F71C55 /* Date+Formatted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatted.swift"; sourceTree = "<group>"; };
+		1353F96A262C7A4A00F71C55 /* ChangesetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangesetEntry.swift; sourceTree = "<group>"; };
 		13858D85262C239C00F2FA9A /* tower-assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tower-assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13858D88262C239C00F2FA9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13858D8A262C239C00F2FA9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -184,6 +188,8 @@
 		13858DBC262C291A00F2FA9A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1353F96A262C7A4A00F71C55 /* ChangesetEntry.swift */,
+				1353F937262C4D0B00F71C55 /* Commit.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -328,7 +334,9 @@
 			files = (
 				1353F92A262C456A00F71C55 /* OSLogExtensions.swift in Sources */,
 				13F28A10262C8B8A00C55613 /* APIServiceProtocol.swift in Sources */,
+				1353F938262C4D0B00F71C55 /* Commit.swift in Sources */,
 				13858D89262C239C00F2FA9A /* AppDelegate.swift in Sources */,
+				1353F96B262C7A4A00F71C55 /* ChangesetEntry.swift in Sources */,
 				13858DC2262C2A2100F2FA9A /* MainVC.swift in Sources */,
 				13858D8B262C239C00F2FA9A /* SceneDelegate.swift in Sources */,
 				1353F93D262C4DE200F71C55 /* Date+Formatted.swift in Sources */,
