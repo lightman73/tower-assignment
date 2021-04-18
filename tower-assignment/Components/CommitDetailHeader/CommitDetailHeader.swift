@@ -64,7 +64,7 @@ import UIKit
         containerStackView.isHidden = false
         
         authorLabel.text = commit.authorName
-        dateLabel.text = commit.date.formattedDate
+        dateLabel.text = commit.date.formattedDateTime
         hashLabel.text = commit.hash
         
         if let avatar = commit.avatar {
